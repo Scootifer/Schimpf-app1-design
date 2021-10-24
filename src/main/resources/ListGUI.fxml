@@ -9,9 +9,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<!-- I can't figure out how to put text on the drop downs, however the top one is the sort options
-and the bottom is the edit options -->
-
 <SplitPane dividerPositions="0.5, 0.5, 0.5" orientation="VERTICAL" prefHeight="492.0" prefWidth="470.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ListController">
    <items>
       <ButtonBar maxHeight="20.0" prefHeight="40.0" prefWidth="200.0">
