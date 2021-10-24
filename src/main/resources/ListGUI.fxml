@@ -9,9 +9,18 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
+<!-- I can't figure out how to put text on the drop downs, however the top one is the sort options
+and the bottom is the edit options -->
 
-<SplitPane dividerPositions="0.5, 0.5" orientation="VERTICAL" prefHeight="492.0" prefWidth="470.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ListController">
+<SplitPane dividerPositions="0.5, 0.5, 0.5" orientation="VERTICAL" prefHeight="492.0" prefWidth="470.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ListController">
    <items>
+      <ButtonBar maxHeight="20.0" prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+            <ChoiceBox prefWidth="150.0" />
+          <Button mnemonicParsing="false" text="Save" />
+            <Button mnemonicParsing="false" text="Load" />
+        </buttons>
+      </ButtonBar>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="37.0" prefWidth="601.0">
          <children>
             <Button layoutX="549.0" layoutY="6.0" mnemonicParsing="false" text="Add" />
@@ -23,9 +32,10 @@
       <ListView prefHeight="486.0" prefWidth="571.0" />
       <ButtonBar maxHeight="30.0" prefHeight="121.0" prefWidth="601.0">
         <buttons>
-          <Button mnemonicParsing="false" text="Edit" />
-            <Button mnemonicParsing="false" text="Remove" />
             <ChoiceBox prefWidth="150.0" />
+            <Button mnemonicParsing="false" text="Remove" />
+            <Button mnemonicParsing="false" text="Button" />
+            <Button mnemonicParsing="false" text="Complete" />
         </buttons>
       </ButtonBar>
    </items>

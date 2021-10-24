@@ -1,11 +1,25 @@
 @startuml
 'https://plantuml.com/sequence-diagram
 
-autonumber
+class ListItem {
+    +id
+    +title
+    +date
+    +description
+}
 
-Alice -> Bob: Authentication Request
-Bob --> Alice: Authentication Response
+class Application {
+    +ItemList
+    +itemCounter
 
-Alice -> Bob: Another authentication Request
-Alice <-- Bob: another authentication Response
+    -addItem(String title, String date, String description)
+    -removeItem(int id)
+    -editTitle(int id, String title)
+    -editDescription(int id, String desc)
+    -sortComplete()
+    -sortIncomplete()
+    -showAll()
+    -save()
+    -load()
+}
 @enduml
