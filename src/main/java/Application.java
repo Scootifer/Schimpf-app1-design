@@ -54,12 +54,12 @@ public class Application {
 
     }
 
-    // THis function will save the data to a JSON format file.
+    // THis function will save the data to a JSON format file using the gson library
     public void save(){
 
     }
 
-    // THis function will load the data from a JSON format file.
+    // THis function will load the data from a JSON format file using the gson library
     public void load(){
 
     }
